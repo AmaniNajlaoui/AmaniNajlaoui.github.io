@@ -5,31 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amani Najlaoui — Applied AI</title>
   <meta name="description" content="Portfolio of Amani Najlaoui, applied AI engineer in Rome. Computer vision, datasets, and sensor models.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@360;500;650&family=Syne:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <p class="kicker">Rome, Italy</p>
-    <h1>Amani Najlaoui</h1>
-    <p class="role">Engineer, Ph.D. — Applied AI / Machine Learning</p>
-    <p class="lead">I train and evaluate models in Python on video, audio, and sensor traces, then check them on a held-out set. Ph.D. in applied AI, University of Rome Tor Vergata and ENEA, October 2026.</p>
-    <p class="links">
-      <a href="mailto:ameni.najlaoui@ept.ucar.tn">ameni.najlaoui@ept.ucar.tn</a>
-      <a href="https://www.linkedin.com/in/amani-najlaoui-5a97b5326/">LinkedIn</a>
-      <a href="https://github.com/AmaniNajlaoui">GitHub</a>
-      <a href="tel:+393513936786">+39 351 393 6786</a>
-    </p>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="mark" href="#top">AN</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="work">
-      <h2>Selected work</h2>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="pill">Rome, Italy</p>
+        <h1>Amani Najlaoui</h1>
+        <p class="role">Engineer, Ph.D. — Applied AI / Machine Learning</p>
+        <p class="lead">I train and evaluate models in Python on video, audio, and sensor traces, then check them on a held-out set. Ph.D. in applied AI, University of Rome Tor Vergata and ENEA, October 2026.</p>
+        <p class="actions">
+          <a class="button" href="mailto:ameni.najlaoui@ept.ucar.tn">Email</a>
+          <a class="button ghost" href="https://www.linkedin.com/in/amani-najlaoui-5a97b5326/">LinkedIn</a>
+          <a class="button ghost" href="https://github.com/AmaniNajlaoui">GitHub</a>
+        </p>
+      </div>
+      <aside class="hero-card">
+        <p class="eyebrow">Now</p>
+        <p class="hero-line">Looking for applied machine learning work, remote or in Italy and France.</p>
+        <ul class="facts">
+          <li><span>Base</span><strong>Rome</strong></li>
+          <li><span>Focus</span><strong>Video, audio, sensors</strong></li>
+          <li><span>Phone</span><strong><a href="tel:+393513936786">+39 351 393 6786</a></strong></li>
+        </ul>
+      </aside>
+    </section>
 
-      <article class="project">
-        <div class="project-copy">
+    <section id="work">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <p>Models I trained and checked myself.</p>
+      </div>
+
+      <article class="feature">
+        <div class="feature-copy">
+          <p class="eyebrow">Featured</p>
           <h3>Broadcast football</h3>
           <p>One tactical camera in. Players, the goalkeeper, the referee, and the ball are detected and tracked, then placed on a measured pitch (105 × 68 m) with a homography. Pitch landmarks are fitted on each frame because the broadcast camera moves.</p>
-          <p class="meta">YOLO · tracking · homography · Python</p>
+          <p class="tags"><span>YOLO</span><span>Tracking</span><span>Homography</span><span>Python</span></p>
         </div>
         <figure>
           <img src="images/football.gif" alt="Looping clip: players, goalkeeper, referee, and ball detected on the broadcast view, and the same tracks mapped onto a 2D pitch.">
@@ -37,63 +66,81 @@
         </figure>
       </article>
 
-      <article class="project compact">
-        <h3>Paddle motion detection</h3>
-        <p>Detection and instance segmentation on video with YOLO, for paddle motion. First author, IEEE STAR 2024.</p>
-        <p class="meta">YOLO · instance segmentation · PyTorch</p>
-      </article>
+      <div class="cards">
+        <article class="card">
+          <p class="eyebrow">IEEE STAR 2024</p>
+          <h3>Paddle motion detection</h3>
+          <p>Detection and instance segmentation on video with YOLO, for paddle motion. First author.</p>
+          <p class="tags"><span>YOLO</span><span>Instance segmentation</span><span>PyTorch</span></p>
+        </article>
 
-      <article class="project compact">
-        <h3>Face detection and recognition</h3>
-        <p>Camera face detection and recognition, about 96.1% on 361 images.</p>
-        <p class="meta"><a href="https://github.com/AmaniNajlaoui/face-recognition-pipeline">face-recognition-pipeline</a></p>
-      </article>
+        <article class="card">
+          <p class="eyebrow">Camera</p>
+          <h3>Face detection and recognition</h3>
+          <p>About 96.1% on 361 images.</p>
+          <p class="tags"><span><a href="https://github.com/AmaniNajlaoui/face-recognition-pipeline">face-recognition-pipeline</a></span></p>
+        </article>
 
-      <article class="project compact">
-        <h3>Sound classification on a vehicle</h3>
-        <p>This is audio, not vision. A sound-classification CNN for sirens ran on an electric vehicle with ROS: about 99% validation accuracy and about 177 ms. First author, IEEE CiSt 2025. A separate rain CNN reached about 93.1% test accuracy. The labelled sets also cover horns, traffic, and speech.</p>
-        <p class="meta">CNNs · spectrograms · ROS · held-out tests</p>
-      </article>
+        <article class="card">
+          <p class="eyebrow">Audio, not vision</p>
+          <h3>Sound classification on a vehicle</h3>
+          <p>A siren CNN on an electric vehicle with ROS: about 99% validation accuracy and about 177 ms. First author, IEEE CiSt 2025. A separate rain CNN reached about 93.1% test accuracy. The labelled sets also cover horns, traffic, and speech.</p>
+          <p class="tags"><span>CNNs</span><span>Spectrograms</span><span>ROS</span></p>
+        </article>
+      </div>
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
-      <dl>
-        <div>
-          <dt>Deep learning and applied AI</dt>
-          <dd>CNNs. PyTorch and TensorFlow. Training and held-out evaluation.</dd>
-        </div>
-        <div>
-          <dt>Datasets and data quality</dt>
-          <dd>Audio, image, and video acquisition. Annotation, cleaning, class balance, and train/validation/test splits.</dd>
-        </div>
-        <div>
-          <dt>Computer vision</dt>
-          <dd>YOLO. Detection, instance segmentation, tracking, and a homography onto a measured pitch.</dd>
-        </div>
-        <div>
-          <dt>Deployment and integration</dt>
-          <dd>ROS, Python pipelines, and real-time inference on a vehicle.</dd>
-        </div>
-        <div>
-          <dt>Languages</dt>
-          <dd>Arabic (native), French, English.</dd>
-        </div>
-      </dl>
+      <div class="section-head">
+        <h2>Skills</h2>
+      </div>
+      <div class="skill-grid">
+        <article>
+          <h3>Deep learning and applied AI</h3>
+          <p>CNNs. PyTorch and TensorFlow. Training and held-out evaluation.</p>
+        </article>
+        <article>
+          <h3>Datasets and data quality</h3>
+          <p>Audio, image, and video acquisition. Annotation, cleaning, class balance, and train/validation/test splits.</p>
+        </article>
+        <article>
+          <h3>Computer vision</h3>
+          <p>YOLO. Detection, instance segmentation, tracking, and a homography onto a measured pitch.</p>
+        </article>
+        <article>
+          <h3>Deployment and integration</h3>
+          <p>ROS, Python pipelines, and real-time inference on a vehicle.</p>
+        </article>
+        <article>
+          <h3>Languages</h3>
+          <p>Arabic (native), French, English.</p>
+        </article>
+      </div>
     </section>
 
     <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Ph.D. in Industrial Engineering — Applied Artificial Intelligence</strong> University of Rome Tor Vergata and ENEA, 2023–2026. Thesis: AI-based acoustic perception for electric and automated vehicles.</li>
-        <li><strong>Polytechnical engineering degree — Complex Systems</strong> École Polytechnique de Tunisie, 2023.</li>
-      </ul>
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
+      <div class="cards two">
+        <article class="card">
+          <p class="eyebrow">2023–2026</p>
+          <h3>Ph.D. in Industrial Engineering</h3>
+          <p>Applied artificial intelligence. University of Rome Tor Vergata and ENEA. Thesis: AI-based acoustic perception for electric and automated vehicles.</p>
+        </article>
+        <article class="card">
+          <p class="eyebrow">2023</p>
+          <h3>Polytechnical engineering degree</h3>
+          <p>Complex Systems. École Polytechnique de Tunisie.</p>
+        </article>
+      </div>
       <p class="note">First-author and equal-first publications in IEEE and a sports-science journal.</p>
     </section>
   </main>
 
   <footer>
-    <p>Amani Najlaoui · Rome · <a href="mailto:ameni.najlaoui@ept.ucar.tn">ameni.najlaoui@ept.ucar.tn</a></p>
+    <p>Amani Najlaoui · Rome</p>
+    <a href="mailto:ameni.najlaoui@ept.ucar.tn">ameni.najlaoui@ept.ucar.tn</a>
   </footer>
 </body>
 </html>
