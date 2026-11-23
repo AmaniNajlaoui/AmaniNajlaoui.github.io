@@ -177,7 +177,7 @@ h1 {
 figure { margin: 1rem 0 0; }
 
 img {
-  width: 100%;
+  width: min(100%, 520px);
   height: auto;
   display: block;
   border-radius: 1rem;
@@ -194,16 +194,15 @@ figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 0.55rem; }
 
 .paddle, .vehicle, .assistant, .face { margin-top: 0.9rem; }
 
-.face img, .paddle img { width: min(100%, 820px); }
-
-.vehicle img { width: min(100%, 760px); }
-
 .shots {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
   margin-top: 1rem;
+  max-width: 520px;
 }
+
+.shots img { width: 100%; }
 
 .shots figure { margin: 0; }
 
