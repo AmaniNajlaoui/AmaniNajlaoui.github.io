@@ -194,16 +194,23 @@ figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 0.55rem; }
 
 .paddle, .vehicle, .assistant, .face, .racket { margin-top: 0.9rem; }
 
-.football img { width: 100%; }
+.football img {
+  width: calc(100% + 2.4rem);
+  max-width: none;
+  margin-left: -1.2rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+}
 
-.racket img { width: min(100%, 320px); }
+.paddle img { width: min(100%, 340px); }
+
+.racket img { width: min(100%, 220px); }
 
 .shots {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
   margin-top: 1rem;
-  max-width: 520px;
+  max-width: none;
 }
 
 .shots img { width: 100%; }
