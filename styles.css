@@ -194,6 +194,10 @@ figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 0.55rem; }
 
 .paddle, .vehicle, .assistant, .face, .racket { margin-top: 0.9rem; }
 
+.football img { width: 100%; }
+
+.racket img { width: min(100%, 320px); }
+
 .shots {
   display: grid;
   grid-template-columns: 1fr 1fr;
