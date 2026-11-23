@@ -94,12 +94,25 @@
         <div class="feature-copy">
           <p class="eyebrow">Audio · IEEE CiSt 2025</p>
           <h3>Sound classification on a vehicle</h3>
-          <p>A siren CNN on an electric vehicle with ROS: about 99% validation accuracy and about 177 ms. First author. A separate rain CNN reached about 93.1% test accuracy. The labelled sets also cover horns, traffic, and speech.</p>
+          <p>A siren CNN on an electric vehicle with ROS: about 99% validation accuracy and about 177 ms. First author. The labelled sets also cover horns, traffic, and speech.</p>
           <p class="tags"><span>CNNs</span><span>Spectrograms</span><span>ROS</span></p>
         </div>
         <figure>
           <img src="images/vehicle.gif" alt="Cockpit of the electric vehicle, with two screens showing the road ahead.">
           <figcaption>The electric vehicle. The sound model ran on board with ROS.</figcaption>
+        </figure>
+      </article>
+
+      <article class="feature rain">
+        <div class="feature-copy">
+          <p class="eyebrow">Audio</p>
+          <h3>Rain detection</h3>
+          <p>A lightweight CNN that classifies rain against no-rain from 4-second log-mel spectrograms. About 93.1% test accuracy. It missed one rain clip. A rule-based baseline on the same split reached about 79%.</p>
+          <p class="tags"><span>CNN</span><span>Spectrograms</span><span>Python</span></p>
+        </div>
+        <figure>
+          <img src="images/rain-confusion.png" alt="Test confusion matrix for rain versus no-rain. One rain clip was missed.">
+          <figcaption>Held-out test. One rain clip missed, 33 false alarms.</figcaption>
         </figure>
       </article>
 

@@ -192,7 +192,7 @@ figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 0.55rem; }
   gap: 0.9rem;
 }
 
-.paddle, .vehicle, .assistant, .face, .racket { margin-top: 0.9rem; }
+.paddle, .vehicle, .assistant, .face, .racket, .rain { margin-top: 0.9rem; }
 
 .football img {
   width: calc(100% + 2.4rem);
