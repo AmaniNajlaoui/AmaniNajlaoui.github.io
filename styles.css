@@ -205,6 +205,8 @@ figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 0.55rem; }
 
 .racket img { width: min(100%, 220px); }
 
+.rain img { width: min(100%, 260px); }
+
 .shots {
   display: grid;
   grid-template-columns: 1fr 1fr;
