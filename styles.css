@@ -192,7 +192,9 @@ figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 0.55rem; }
   gap: 0.9rem;
 }
 
-.vehicle, .assistant { margin-top: 0.9rem; }
+.vehicle, .assistant, .face { margin-top: 0.9rem; }
+
+.face img { width: min(100%, 820px); }
 
 .vehicle img { width: min(100%, 760px); }
 
