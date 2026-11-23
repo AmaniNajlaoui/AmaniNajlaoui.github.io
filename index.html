@@ -37,8 +37,6 @@
         </p>
       </div>
       <aside class="hero-card">
-        <p class="eyebrow">Now</p>
-        <p class="hero-line">Looking for applied machine learning work, remote or in Italy and France.</p>
         <ul class="facts">
           <li><span>Base</span><strong>Rome</strong></li>
           <li><span>Focus</span><strong>Video, audio, sensors</strong></li>
@@ -81,13 +79,39 @@
           <p class="tags"><span><a href="https://github.com/AmaniNajlaoui/face-recognition-pipeline">face-recognition-pipeline</a></span></p>
         </article>
 
-        <article class="card">
-          <p class="eyebrow">Audio, not vision</p>
-          <h3>Sound classification on a vehicle</h3>
-          <p>A siren CNN on an electric vehicle with ROS: about 99% validation accuracy and about 177 ms. First author, IEEE CiSt 2025. A separate rain CNN reached about 93.1% test accuracy. The labelled sets also cover horns, traffic, and speech.</p>
-          <p class="tags"><span>CNNs</span><span>Spectrograms</span><span>ROS</span></p>
-        </article>
       </div>
+
+      <article class="feature vehicle">
+        <div class="feature-copy">
+          <p class="eyebrow">Audio, not vision · IEEE CiSt 2025</p>
+          <h3>Sound classification on a vehicle</h3>
+          <p>A siren CNN on an electric vehicle with ROS: about 99% validation accuracy and about 177 ms. First author. A separate rain CNN reached about 93.1% test accuracy. The labelled sets also cover horns, traffic, and speech.</p>
+          <p class="tags"><span>CNNs</span><span>Spectrograms</span><span>ROS</span></p>
+        </div>
+        <figure>
+          <img src="images/vehicle.png" alt="Cockpit of the electric vehicle, with two screens showing the road ahead.">
+          <figcaption>The electric vehicle. The sound model ran on board with ROS.</figcaption>
+        </figure>
+      </article>
+
+      <article class="feature assistant">
+        <div class="feature-copy">
+          <p class="eyebrow">LLM application</p>
+          <h3>Driving-assistance chatbot</h3>
+          <p>A voice chatbot for driving assistance. It uses Google Gemini, with speech in and speech out, and it answers from the current GPS fix: weather, and nearby places such as restaurants. Flask and Python.</p>
+          <p class="tags"><span>Gemini</span><span>Speech</span><span>GPS</span><span><a href="https://github.com/AmaniNajlaoui/flask-chatbot">flask-chatbot</a></span></p>
+        </div>
+        <div class="shots">
+          <figure>
+            <img src="images/assistant-weather.png" alt="Chat screen: the assistant answers a weather question for Lille.">
+            <figcaption>Weather from the GPS fix in Lille.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/assistant-places.png" alt="Chat screen: the assistant lists nearby restaurants and asks which one.">
+            <figcaption>Nearby restaurants from the same location.</figcaption>
+          </figure>
+        </div>
+      </article>
     </section>
 
     <section id="skills">

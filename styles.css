@@ -80,7 +80,7 @@ nav a:hover { color: white; }
   display: grid;
   grid-template-columns: 1.4fr 0.8fr;
   gap: 1.4rem;
-  align-items: stretch;
+  align-items: start;
   padding: 1.4rem 0 2.4rem;
 }
 
@@ -148,6 +148,8 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
+.facts li:first-child { border-top: 0; padding-top: 0; }
+
 .facts span { color: var(--muted); }
 .facts a { text-decoration: none; }
 
@@ -186,9 +188,22 @@ figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 0.55rem; }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 0.9rem;
 }
+
+.vehicle, .assistant { margin-top: 0.9rem; }
+
+.vehicle img { width: min(100%, 760px); }
+
+.shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.shots figure { margin: 0; }
 
 .cards.two { grid-template-columns: 1fr 1fr; }
 
@@ -215,7 +230,7 @@ footer {
 footer a { color: var(--pink); }
 
 @media (max-width: 800px) {
-  .hero, .cards, .cards.two, .skill-grid { grid-template-columns: 1fr; }
+  .hero, .cards, .cards.two, .skill-grid, .shots { grid-template-columns: 1fr; }
   .skill-grid article:last-child { grid-column: auto; }
   h1 { font-size: 3rem; }
   footer { flex-direction: column; }
